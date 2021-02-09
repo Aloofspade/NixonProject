@@ -1,0 +1,96 @@
+/* These styles will be applied on devices that have a width of at least 768px */
+@media screen and (min-width: 768px) {
+    .logo {
+      justify-content: flex-start;
+    }
+  
+    .cards {
+      flex-direction: row;
+      justify-content: space-around;
+      height: 100%;
+      padding: 0 auto;
+      width: 85%;
+      margin: 0 auto;
+      
+    }
+  
+  
+    .card {
+      width: 30rem;
+     
+    }
+    
+  
+    .card:first-of-type {
+      margin-bottom: 0;
+    }
+  
+    .card-image {
+      width: 297px;
+      height: 0 auto;
+      object-fit: cover;
+      
+    }
+  
+    .votes-number-nixon,
+    .votes-number-mcgovern {
+      font-size: 3.5rem;
+    }
+  
+    .votes-text {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+  
+    .candidate-name {
+      font-size: 15px;
+      
+    }
+  
+    .candidate-party {
+      font-size: 1.1rem;
+    }
+  
+    .card-btn {
+      font-size: 2rem;
+    }
+    
+
+    
+  }
+  
+  
+  /* These styles will be applied on devices that have a width of at least 1024px */
+  @media screen and (min-width: 1024px) {
+    .cards {
+      width: 70%;
+    }
+    
+  
+    .card:hover {
+      transform: translateY(-2rem);
+    }
+  
+    .card:hover .btn-nixon,
+    .card:hover .btn-mcgovern {
+      font-size: 2.5rem;
+    }
+  
+    .btn-nixon:hover {
+      background: var(--btn-red-hover);
+    }
+  
+    .btn-mcgovern:hover {
+      background: var(--btn-light-blue-hover);
+    }
+    
+  }
+  
+  /* These styles will be applied on devices that have a width of at least 1400px */
+  @media screen and (min-width: 1400px) {
+    .cards {
+      width: 60%;
+    }
+    
+  }
+  

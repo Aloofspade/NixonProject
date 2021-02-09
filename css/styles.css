@@ -1,0 +1,312 @@
+/*************** 
+ * BASE STYLES *
+ ***************/
+
+/* Variables */
+:root {
+    --black: #1b1d29;
+    --white: #ffffff;
+    --bg-overlay: RGB(253, 255, 206, 0.96);
+    --btn-red: #fe4c13;
+    --btn-red-hover: #ee3a01;
+    --btn-light-blue: #3fb3e4;
+    --btn-light-blue-hover: #21a7e0;
+    --shadow: #cccea7;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  body,
+  html,
+  #app {
+    height: 100%;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    cursor:  pointer;
+    margin: auto;
+   
+  }
+  
+  /******* 
+   * APP *
+   *******/
+  
+  #app {
+  
+    overflow-y: scroll;
+  }
+  
+  .app-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url(../images/american-flag.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  /********** 
+   * HEADER *
+   **********/
+  
+  header {
+    background: var(--black);
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* US ELECTIONS */
+  .logo h1 {
+    font-size: 3rem;
+  }
+  
+  /* Star */
+  .logo img {
+    margin-right: 1rem;
+    width: 4rem;
+  }
+  
+
+  p{
+    font-size: 15px;
+    color: var(--btn-light-blue);
+    
+}
+  /******** 
+   * MAIN *
+   ********/
+  
+  main {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+    margin: 10rem;
+    
+  }
+  
+  /* Card */
+  .card {
+    width: 20rem;
+    border: 2px solid var(--black);
+    overflow: hidden;
+    box-shadow: 15px 15px 6px black;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    
+  }
+  
+  .card:first-of-type {
+    margin-bottom: 5rem;
+  }
+  
+  /* Card image */
+  .card-image {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    vertical-align: middle;
+    
+  }
+  
+  /* Card information */
+  .card-info {
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--white);
+    color: var(--black);
+    padding: 2rem 0;
+  }
+  
+  .candidate-votes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+  }
+  
+  .votes-number-nixon,
+  .votes-number-mcgovern {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  
+  .votes-text {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  /* Line */
+  .line {
+    width: 0.1rem;
+    background: var(--black);
+  }
+  
+  /* Candidate info */
+  .candidate-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .candidate-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    padding-right: 10px;
+  }
+  
+  .candidate-party {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  /* Card button */
+  .card-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.5rem 0;
+    color: var(--white);
+    cursor: pointer;
+    border-top: 2px solid var(--black);
+  }
+  #GeoName{
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .btn-nixon,
+  .btn-mcgovern {
+    transition: all 0.5s ease;
+  }
+  
+  .btn-nixon {
+    background: var(--btn-red);
+  }
+  
+  .btn-mcgovern {
+    background: var(--btn-light-blue);
+  }
+
+  .voting{
+    border: ridge blue;
+    text-align: left;
+    height: 0 auto;  
+    padding: 50px;
+    margin: 0 auto;
+    line-height: 1.0;
+    
+}
+
+.table{
+  color: var(--black);
+  border: ridge red;
+    text-align: left;
+    
+    width: 650px ;
+    height: 0 auto;  
+    padding: 60px;
+    margin: 0 auto;
+    line-height: 1.0;
+    
+    
+}
+
+
+legend{
+  color: #F20505;
+  font-size: 20px;
+  border: bluezZ;
+}
+#parent {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.infoNix{
+  font-size: 15px;
+  border: ridge black;
+ text-align: center;
+ width: 300px;
+ height: 100px;  
+ 
+
+ line-height: 5.8;
+ background-color: var(--btn-red);
+}
+.infoMcg{
+  font-size: 15px;
+  border: ridge black;
+ text-align: center;
+ width: 300px;
+ height: 100px;  
+
+ 
+
+ line-height: 5.8;
+ background-color: var(--btn-light-blue);
+}
+
+
+/* soccer */
+
+#field{
+  width: 750px;
+  height: auto;
+  border: blue 10px solid;
+  background-color: red;
+  position: relative;
+  overflow: hidden;
+  cursor:  grabbing;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+}
+#ball{
+position: absolute;
+left: 0;
+top: 0;
+width: 70px;
+height: 70px;
+transition: all .5s;
+}
+
+.card-image{
+  grid-row: 2/3;
+    grid-column: 1/2;
+    width: 0 auto;
+   height: 0 auto;  
+   padding: 0 auto;
+}
